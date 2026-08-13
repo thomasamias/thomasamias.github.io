@@ -116,6 +116,11 @@ h1 {
   color: #ffffff;
 }
 
+.btn:hover,
+.contact-links a:hover {
+  filter: brightness(1.08);
+}
+
 .section {
   max-width: 1120px;
   margin: 0 auto;
@@ -208,6 +213,32 @@ h1 {
   padding-left: 0;
 }
 
+.project-link:hover {
+  color: #99f6e4;
+}
+
+.project-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.project-actions .project-link {
+  color: #5eead4;
+  font-weight: 800;
+  border: 1px solid #334155;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.project-actions .project-link:hover {
+  background: #134e4a;
+  color: #ffffff;
+  border-color: #14b8a6;
+}
+
 .tech-list {
   display: flex;
   gap: 12px;
@@ -246,6 +277,11 @@ pre {
   color: #5eead4;
   font-size: 16px;
   overflow-x: auto;
+  line-height: 1.7;
+}
+
+.contact-links {
+  margin-top: 18px;
 }
 
 footer {
@@ -269,5 +305,32 @@ footer {
 
   .hero-content {
     margin-top: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .project-link {
+    width: 100%;
+    text-align: center;
   }
 }
