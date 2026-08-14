@@ -333,4 +333,16 @@ footer {
     width: 100%;
     text-align: center;
   }
+
+.project-link-primary {
+  background: #14b8a6;
+  color: #042f2e !important;
+  border-color: #14b8a6 !important;
+}
+
+.project-link-primary:hover {
+  background: #5eead4 !important;
+  color: #042f2e !important;
+}
+
 }
